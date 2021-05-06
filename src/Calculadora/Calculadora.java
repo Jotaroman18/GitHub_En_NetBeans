@@ -44,9 +44,9 @@ public class Calculadora {
         return multiplicacion;
     }
 
-    /*public double division() {
+    public double division() {
         double division = numero1 / numero2;
         return division;
-    }*/
+    }
 
 }
