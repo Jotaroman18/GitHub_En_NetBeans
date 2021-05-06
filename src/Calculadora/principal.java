@@ -22,7 +22,7 @@ public class principal {
         int operacion = 0;
         do {
             System.out.println(" Introduce Operacion a realizar");
-            System.out.println(" 1. suma \n 2. resta \n 3. multiplicar \n 4. dividir \n 5. salir");
+            System.out.println(" 1. suma \n 2. resta \n 3. multiplicar \n 4. dividir \n 5. módulo \n 6. salir");
             // leo por teclado un entero como opción del menú
             operacion = sc.nextInt();
             // segun valor elegido ejecuto método del objeto claculadora
@@ -39,11 +39,14 @@ public class principal {
                 case 4:
                     System.out.println(" La division es " + casio.division());
                     break;
+                case 5:
+                    System.out.println(" El módulo es " + casio.modulo());
+                    break;
                 default:
-                    System.out.println(" Debes elegir una opción de 1 a 5");
+                    System.out.println(" Debes elegir una opción de 1 a 6");
             }
 
-        } while (operacion != 5);
+        } while (operacion != 6);
 
         System.out.println(" Gracias por usar la calculadora...hasta luegooooorrr");
 
